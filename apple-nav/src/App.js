@@ -45,40 +45,6 @@ function App() {
 
   return (
     <div className="App">
-      <div className="NavBar-banner">
-        <div className="NavBar">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/Mac">Mac</NavLink>
-          <NavLink to="/iPad">iPad</NavLink>
-          <NavLink to="/iPhone">iPhone</NavLink>
-          <NavLink to="/Watch">Watch</NavLink>
-          <NavLink to="/TV">TV</NavLink>
-          <NavLink to="/Music">Music</NavLink>
-          <NavLink to="/Support">Support</NavLink>
-          <NavLink to="/Search">Search</NavLink>
-          {/* <NavLink to="/Shopping">Shopping</NavLink> */}
-        </div>
-      </div>
-      <Switch>
-        <Route exact path={"/"} component={Home} />
-        <Route path={"Mac"} component={Mac} />
-        <Route exact path={"/iPad"} component={iPad} />
-        <Route exact path={"/iPhone"} component={iPhone} />
-        <Route exact path={"/Watch"} component={Watch} />
-        <Route exact path={"/TV"} component={TV} />
-        <Route exact path={"/Music"} component={Music} />
-        <Route exact path={"/Support"} component={Support} />
-        <Route exact path={"/Search"} component={Search} />
-        {/* <Route exact path={"/Shopping"} component={Shopping} /> */}
-      </Switch>
-      <br />
-      <br />
-      {/* <div className="NavBar">
-        <h3>morestuff</h3>
-        {navItems.map(item => (
-          <CreateNavBar 
-))}
-      </div> */}
       <NavBar content={navItems} />
 
       <header className="App-header">
