@@ -26,19 +26,24 @@
   width: 100%;
   height: 40px;
   background: #323232;
-  /* margin: auto; */
+  top: 0;
 }
 .NavBar {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 95%;
-  align-items: center;
   margin: auto;
-  border: 1px solid black;
-  background: blue;
 }
 .NavBar a {
   color: white;
   text-decoration: none;
+}
+
+.NavBar-banner,
+.NavBar {
+  display: flex;
+}
+
+.page_content {
+  margin-top: 50px;
 }

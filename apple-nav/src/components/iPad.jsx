@@ -2,8 +2,8 @@ import React from "react";
 
 const iPad = () => {
   return (
-    <div>
-      <h2>Home</h2>
+    <div className="page_content">
+      <h2>iPad</h2>
     </div>
   );
 };

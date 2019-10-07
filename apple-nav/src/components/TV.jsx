@@ -2,8 +2,8 @@ import React from "react";
 
 const TV = () => {
   return (
-    <div>
-      <h2>Home</h2>
+    <div className="page_content">
+      <h2>TV</h2>
     </div>
   );
 };
