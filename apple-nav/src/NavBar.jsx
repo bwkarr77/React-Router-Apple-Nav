@@ -16,13 +16,9 @@ const NavBar = props => {
   console.log(props.content);
   const [navbaritems, setnavitems] = useState([]);
 
-  const funkyFunc = props => {
-    console.log(props);
-    setnavitems(props);
-  };
-
   return (
     <div>
+      {/* Hard Coding the NavBar. AKA not DRY */}
       <div className="NavBar-banner">
         <div className="NavBar">
           <NavLink to="/">Home</NavLink>
@@ -49,27 +45,29 @@ const NavBar = props => {
         <Route exact path={"/Search"} component={Search} />
         <Route exact path={"/Shopping"} component={Shopping} />
       </Switch>
-      {/* 
-      <div>
+
+      {/* Working on DRY setup */}
+      <div className="NavBar-banner-dry">
         {props.content.map(item => (
-          // <div className="NavBar-banner">
-          <div className="NavBar">
-            {funkyFunc(item)};
-            <NavLink to={`/components/${item}`} key={item}>
+          <div className="NavBar-Items">
+            <NavLink to={`/${item}`} key={item}>
               {item}
             </NavLink>
-             */}
-      {/*  */}
-      {/*             
+            {/*  */}
             <Switch>
-              {(item = "Home" ? <Route exact ={'/'} component={item} /> :<Route exact path={item} component={item} />)} 
-              <Route path={item} component={item} />
+              {
+                (item = "Home" ? (
+                  <Route exact path={"/"} component={item} />
+                ) : (
+                  <Route exact path={`/${item}`} component={item} />
+                ))
+              }
+              {/* <Route path={item} component={item} /> */}
             </Switch>
             <h3>{navbaritems}</h3>
           </div>
-          // </div>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 };

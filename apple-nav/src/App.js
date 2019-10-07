@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar content={navItems} />
+      <NavBar content={navItems} key={navItems} />
       <header className="App-header"></header>
     </div>
   );

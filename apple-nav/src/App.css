@@ -30,11 +30,10 @@
 }
 .NavBar {
   justify-content: space-between;
-  align-items: center;
   width: 95%;
   margin: auto;
 }
-.NavBar a {
+a {
   color: white;
   text-decoration: none;
 }
@@ -45,5 +44,20 @@
 }
 
 .page_content {
-  margin-top: 50px;
+  margin-top: 100px;
+}
+
+.NavBar-banner-dry {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: grey;
+  justify-content: space-between;
+  position: fixed;
+  top: 40px;
+}
+
+.NavBar-Items {
+  background: grey;
+  width: 9.5%;
 }
