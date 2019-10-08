@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.NavBar-banner {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  background: #323232;
+  top: 0;
+}
+.NavBar {
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.NavBar-banner,
+.NavBar {
+  display: flex;
+}
+
+.page_content {
+  margin-top: 100px;
+}
+
+.NavBar-banner-dry {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: grey;
+  justify-content: space-between;
+  position: fixed;
+  top: 40px;
+}
+
+.NavBar-Items {
+  background: grey;
+  width: 9.5%;
+}
